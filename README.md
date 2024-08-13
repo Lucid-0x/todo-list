@@ -78,8 +78,6 @@ After running the app for the first time. it will create a text file "todo-list.
 
 6- Adding "AC" (two orders at the same time) won't work
 
-5- if there are no tasks you will have nothing till you add one
-
 
 ## Future plans and features
 

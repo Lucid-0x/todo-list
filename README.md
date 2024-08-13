@@ -1,2 +1,2 @@
-# todo
-A super effeicant todo list cli with python
+# Python Cli todo list 
+A super efficient todo list cli with python

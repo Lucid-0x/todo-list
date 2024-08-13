@@ -60,11 +60,8 @@ After running the app for the first time. it will create a text file "todo-list.
 | help | print these instructions | N/a | `help` |
 | clear | delete all tasks | N/a | `clear` |
 | exit | exit the program | you can quit by clicking `ctrl + c` 👀 | `exit` |
-| | Content Cell | | |
-| | Content Cell | | |
-| | Content Cell | | |
-| | Content Cell | | |
-| | Content Cell | | |
+
+-----------------------------------------------------------------------------------------
 
 
 ## Features and tips

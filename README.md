@@ -14,6 +14,9 @@ A super efficient to-do list CLI with Python. it made to be a daily to-do list
 
 ⚠️ **YOU HAVE TO INSTALL PYTHON FIRST** ⚠️
 
+![ezgif-6-93cdca2ffc](https://github.com/user-attachments/assets/322a1ccb-6f21-44a7-9b98-b7f5392c6ea2)
+
+
 <details>
 <summary> If you have <b>" git "</b> installed check this way --> </summary>
   
@@ -48,6 +51,9 @@ After running the app for the first time. it will create a text file "todo-list.
 
 
 ## Getting started & shortcuts
+
+![ezgif-6-3f1186d7d0](https://github.com/user-attachments/assets/b7795edd-24a5-4009-b0d1-f24658060e0d)
+
 
 | order  | meaning | features | examples |
 | ------------- | ------------- | ---------- | ------- |

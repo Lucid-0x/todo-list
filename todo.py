@@ -95,9 +95,6 @@ def check_if_list_exist():
         with open(FILE_LIST_PATH, 'w'):
             pass
 
-
-
-# ------------------------------------------------------------------
 def main():
 
     cls()
@@ -110,12 +107,15 @@ def main():
 
     if letter == 'a':
         cls()
-        if number:
-            for _ in range(0, int(number)):
-                add_task()
-        else:
-            add_task()     
-
+        try:
+            if number:
+                for _ in range(0, int(number)):
+                    add_task()
+            else:
+                add_task()     
+        except:
+            pass
+    
     elif letter == 'm':
 
         cls()
@@ -166,46 +166,50 @@ def main():
 
     elif letter == 'random':
         cls()
-        with open(FILE_LIST_PATH, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
+        try:
+            with open(FILE_LIST_PATH, 'r', encoding='utf-8') as file:
+                lines = file.readlines()
 
-        start_time = time.time()
-        duration = 0.2
+            start_time = time.time()
+            duration = 0.2
 
 
-        while time.time() - start_time < duration:
-            task = random.randint(0, len(lines) - 1)
-            if uncheck_sign in lines[task]:
-                print(lines[task])
-                break
-        else:
-            print("no InComplete tasks")
-        input("okay got it: ")
+            while time.time() - start_time < duration:
+                task = random.randint(0, len(lines) - 1)
+                if uncheck_sign in lines[task]:
+                    print(lines[task])
+                    break
+            else:
+                print("no InComplete tasks")
+            input("okay got it: ")
+        except:
+            pass
         
     elif choice == 'clear':
         clear_all()
 
     elif choice == 'help':
+        cls()
         print("""
-a    = add new task
-c + {line_number\}    = check a task
-m + {line_number\}    = modifiy a task
-random     = suggest you none complete task     
-clear all     = clear everything
-exit     = exit the program
-                       
+a + "optional({line number})" --- add task
+c + {line number} --- check task
+uc + {line number} --- uncheck task
+m + {line number} --- modifiy a task
+random	-- display one task to do
+help -- print these instructions
+clear -- delete all tasks
+exit -- exit the program
 """)
         input("enter to exit: ")
 
     elif choice == 'exit':
+        cls()
+        print("have a good day <3")
         exit()
 
     else:
         pass
 
-
 check_if_list_exist()
-
 while True:
     main()
-

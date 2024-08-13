@@ -67,11 +67,17 @@ After running the app for the first time. it will create a text file "todo-list.
 ## Features and tips
 
 1- the tasks will always displayed so you don't waste time requesting them
+
 2- this is not case sensitive or order sensitive or even waiting for something meaning these will work np `a   2` -- `,c23` -- `2m,` -- `RAnDOM`
+
 3- if you add "," to "a" it will not do anything 
+
 4- sending any unexpected characters will "pass" it like it never happened and you will go back to promote
+
 5- you have to write the letters (a) or words (random) correctly otherwise it won't work
+
 6- Adding "AC" (two orders at the same time) won't work
+
 5- if there are no tasks you will have nothing till you add one
 
 
